@@ -1,0 +1,11 @@
+.statusRow td{
+	border-right : 1px solid yellow;
+}
+
+#confirmBooking{
+	display : none;
+}
+
+#cancelDialog{
+	display : none;
+}

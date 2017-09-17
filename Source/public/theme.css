@@ -1,0 +1,311 @@
+/*
+Rexel Theme custom css
+Developed by Capgemini
+
+Author: Ajinkya Powale
+Date: 30th Sept 2016
+
+This theme is based on Bootstrap and requires jcf form components.
+Do not edit this css until explictly mentioned to make global changes in the theme.
+In case of any changes required, it should be overrided.
+
+*/
+
+body {
+  padding-top: 65px;
+}
+
+h1,h2,h3,h4,h5,h6{
+	text-transform: uppercase;
+	color: #333333;
+}
+.content{
+	margin-top:40px;
+}
+.jumbotron{
+	/* background-color: #313131; */
+}
+.container .jumbotron, .container-fluid .jumbotron {
+	border-radius:0px;
+}
+.navbar-static-top, .navbar-fixed-top, .navbar-fixed-bottom {
+    box-shadow: 0px 7px 32px #ddd;
+}
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.active>a{
+	color: #f6bb19;
+	background-image: linear-gradient(to bottom, #e8e8e8 0, #fff 100%);
+}
+.navbar-brand{
+	text-transform: uppercase;
+}
+a.navbar-brand.navbar-brand-logo {
+    background-color: #ededed;
+    border: none;
+    margin: 0 20px 0 0;
+    min-width: 178px;
+    text-align: center;
+    color: #f6bb19;
+    text-shadow: none;
+    background: url(../img/logo.png) no-repeat center center ,linear-gradient(to bottom, #ccc 0, #fff 100%);
+    background-size: 100%;
+}
+.navbar-static-top, .navbar-fixed-top, .navbar-fixed-bottom{
+	border:none;
+}
+.nav>li>a {
+	transition: color 0.6s ease;
+    text-transform: uppercase;
+	font-weight: bold;
+    font-size: 13px;
+}
+.navbar-nav {
+	float: right;
+	margin: 0;
+}
+.logoutIcon{
+	float:right;
+}
+
+.theme-dropdown .dropdown-menu {
+  position: static;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.label {
+	padding: 0.2em .8em 0.2em;
+    font-size: 65%;
+	border-radius: 0px;
+	text-transform: uppercase;
+}
+.label-default {
+    background-color: #393939;
+	background-color: #fff;
+    border: 3px solid #f6bb19;
+    color: #333;
+}
+.label-primary, .label-success, .label-warning, .label-info, .label-danger{
+	padding: 0.4em .8em 0.4em;
+}
+.btn{
+	transition: all 0.6s ease;
+	background-image: none;
+	text-transform: uppercase;
+	text-shadow:none;
+	border-width: 3px;
+	box-shadow:none;
+	/* padding: 5px 14px; */
+}
+.btn-lg, .btn-group-lg>.btn {
+    padding: 5px 20px;
+}
+.btn-default{
+	border-color: #f6bb19;
+	font-weight:300;
+	color:#16181e;
+}
+.btn-default:active, .btn-default.active, .open>.dropdown-toggle.btn-default,
+.btn-default:hover, .btn-default:focus{
+	background-color: #fff;
+	border-color: #f6bb19;
+}
+.btn-default:hover{
+	border-color: #f6bb19;
+	background-color:#f6bb19;
+	color:#fff;
+}
+
+.btn-primary{
+	background-color:#f6bb19;
+	border-color: #f6bb19;
+	color:#fff;
+}
+.btn-primary:hover{
+	background-color:#fff;
+	border-color: #f6bb19;
+	color:#f6bb19;
+}
+.btn-dark{
+	background: #16181e;
+	border-color: #16181e;
+	color:#fff;
+}
+.btn-dark:hover{
+	background-color:#f6bb19;
+	border-color: #f6bb19;
+	color:#fff;
+}
+
+.btn-success{
+	border-color: #16a085;
+}
+.btn-info{
+	border-color: #5bc0de;
+}
+.btn-info-border-only{
+	border-color: #5bc0de;
+	background: #fff;
+    color: #000;
+}
+.btn-info-border-only:hover{
+	border-color: #5bc0de;
+	background: #5bc0de;
+    color: #fff;
+}
+.btn-warning{
+	border-color: #f0ad4e;
+}
+.btn-danger{
+	border-color: #d9534f;
+}
+
+
+
+.table-bordered>thead>tr>th, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>th, 
+.table-bordered>thead>tr>td, .table-bordered>tbody>tr>td, .table-bordered>tfoot>tr>td {
+	border: 1px solid #7f7f7f;
+}
+.table-bordered {
+    border: 1px solid #7f7f7f;
+}
+.table-bordered thead{
+	background-color: #7f7f7f;
+    color: #f6bb19;
+}
+.table>thead>tr>th {
+    border-bottom: 2px solid #f6bb19;
+}
+.table-striped>tbody>tr:nth-of-type(odd) {
+    background-color: #eee;
+}
+.panel-heading {
+	background-image:none!important;
+}
+[data-toggle="popover"]{
+	cursor:pointer;
+}
+.popover{
+	border-radius: 0px;
+}
+.popover-title {
+	font-size:14px;
+	font-weight:bold;
+	color:#f0ad4e;
+}
+.modal-content{
+	border-radius:0px;
+}
+table a{
+	color: #666;
+	text-decoration:underline;
+}
+
+.warning{
+	color: #f0ad4e;
+}
+.danger{
+	color: #d9534f;
+}
+
+/***************************** Data Table Component Styles *************************/
+.dataTables_length{
+	float:left;
+}
+div.dataTables_wrapper div.dataTables_paginate{
+	float:right;
+}
+
+/************************ Styles For Form Components *******************************/
+input[type='text'],input[type='password'],input[type='select'], textarea{
+	border: 1px solid #313131;
+	color: #313131;
+}
+input[type='text'],input[type='password']{
+	height:35px;
+	padding:5px;
+}
+textarea{
+	resize:none;
+}
+.jcf-select {
+    margin: 0 0 0px;
+	height: 35px;
+	min-width:182px;
+	border-color: #313131;
+}
+.jcf-select .jcf-select-text {
+    line-height: 35px;
+}
+.jcf-select .jcf-select-opener{
+	background: #f6bb19;
+	padding-top: 8px;
+	width: 35px;
+}
+.jcf-select .jcf-select-opener:after{
+	content:'\25BC';
+	color:#fff;
+}
+.inputField{
+	display: inline-block;
+}
+.inputField label{
+	display: block;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    color: #313131;
+}
+.inputField .error{
+	font-size: 11px;
+    margin-left: 5px;
+    text-transform: none;
+    color: #d9534f;
+}
+label.checkbox, label.radio{
+	display:inline;
+	margin-right:10px;
+	font-weight:300;
+	text-transform:none;
+	color:#666;
+}
+.jcf-focus{
+	border-color:#313131!important
+}
+.jcf-focus *{
+	border-color:#f6bb19!important
+}
+
+.jcf-checkbox span{
+	height: 6px;
+    width: 11px;
+	border-color:#f6bb19;
+}
+.jcf-radio span{
+	background: #f6bb19;
+}
+.jcf-checkbox, .jcf-radio{
+	background: #fff;
+    border: 2px solid #313131;
+    height: 25px;
+    width: 25px;
+}
+.jcf-radio {
+    border-radius: 15px;
+}
+.searchContainer .inputField{
+	width:100%;
+}
+.searchContainer .inputField input[type="text"], .searchContainer .inputField .jcf-select{
+	width:100%;
+}
+/******************************************** Media Queries *********************************/
+
+/* For Devices with screen resolution 992px and above (Medium devices - desktops, 992px and up) */
+@media (min-width: 992px){
+	
+	a.navbar-brand.navbar-brand-logo {
+		min-width: 178px;
+		background: url(../img/logo.png) no-repeat left center ,linear-gradient(to bottom, #ccc 0, #fff 100%);
+		background-size: 100%;
+	}
+}
